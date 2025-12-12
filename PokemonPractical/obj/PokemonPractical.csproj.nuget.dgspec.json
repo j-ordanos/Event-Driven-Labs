@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/PokemonPractical.csproj": {}
+  },
+  "projects": {
+    "/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/PokemonPractical.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/PokemonPractical.csproj",
+        "projectName": "PokemonPractical",
+        "projectPath": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/PokemonPractical.csproj",
+        "packagesPath": "/home/yordanos-zewge/.nuget/packages/",
+        "outputPath": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/yordanos-zewge/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

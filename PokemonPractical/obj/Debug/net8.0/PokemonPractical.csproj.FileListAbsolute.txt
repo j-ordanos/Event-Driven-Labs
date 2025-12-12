@@ -1,0 +1,14 @@
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/bin/Debug/net8.0/PokemonPractical
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/bin/Debug/net8.0/PokemonPractical.deps.json
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/bin/Debug/net8.0/PokemonPractical.runtimeconfig.json
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/bin/Debug/net8.0/PokemonPractical.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/bin/Debug/net8.0/PokemonPractical.pdb
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.GeneratedMSBuildEditorConfig.editorconfig
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.AssemblyInfoInputs.cache
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.AssemblyInfo.cs
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.csproj.CoreCompileInputs.cache
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/refint/PokemonPractical.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.pdb
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.genruntimeconfig.cache
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/ref/PokemonPractical.dll
