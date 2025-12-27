@@ -32,3 +32,9 @@
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/obj/Debug/net8.0/PokemonMinimalControllerAPI.pdb
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/obj/Debug/net8.0/PokemonMinimalControllerAPI.genruntimeconfig.cache
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/obj/Debug/net8.0/ref/PokemonMinimalControllerAPI.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/bin/Debug/net8.0/DnsClient.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/bin/Debug/net8.0/MongoDB.Bson.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/bin/Debug/net8.0/MongoDB.Driver.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/bin/Debug/net8.0/SharpCompress.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/bin/Debug/net8.0/Snappier.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/bin/Debug/net8.0/ZstdSharp.dll

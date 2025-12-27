@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using PokemonMinimalControllerAPI.Services;
 
 namespace PokemonMinimalControllerAPI.Controllers;
 
@@ -6,26 +7,26 @@ namespace PokemonMinimalControllerAPI.Controllers;
 [Route("api/[controller]")]
 public class PokemonController : ControllerBase
 {
-    // Pokémon storage 
-    private static List<Pokemon> _pokemons = new()
+    private readonly PokemonService _pokemonService;
+
+    public PokemonController(PokemonService pokemonService)
     {
-        new Pokemon("Pikachu"),
-        new Pokemon("Charmander"),
-        new Pokemon("yoo")
-    };
+        _pokemonService = pokemonService;
+    }
     
     // GET: api/pokemon
     [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(_pokemons);
+        var pokemons = _pokemonService.GetAll();
+        return Ok(pokemons);
     }
 
     // GET: api/pokemon/{name}
     [HttpGet("{name}")]
     public IActionResult GetByName(string name)
     {
-        var pokemon = _pokemons.FirstOrDefault(p => p.Name == name);
+        var pokemon = _pokemonService.GetByName(name);
         
         if (pokemon == null)
         {
@@ -40,49 +41,43 @@ public class PokemonController : ControllerBase
     public IActionResult Create([FromBody] Pokemon newPokemon)
     {
         // Check if Pokémon already exists
-        if (_pokemons.Any(p => p.Name == newPokemon.Name))
+        if (_pokemonService.Exists(newPokemon.Name))
         {
             return Conflict($"Pokémon '{newPokemon.Name}' already exists");
         }
         
-        // Add to our list
-        _pokemons.Add(newPokemon);
+        var pokemon = _pokemonService.Create(newPokemon);
         
         // Return 201 Created with location header
         return CreatedAtAction(
             nameof(GetByName), 
-            new { name = newPokemon.Name }, 
-            newPokemon);
+            new { name = pokemon.Name }, 
+            pokemon);
     }
 
     // DELETE: api/pokemon/{name}
     [HttpDelete("{name}")]
     public IActionResult Delete(string name)
     {
-        var pokemon = _pokemons.FirstOrDefault(p => p.Name == name);
-        
-        if (pokemon == null)
+        if (!_pokemonService.Exists(name))
         {
             return NotFound($"Pokémon '{name}' not found");
         }
         
-        _pokemons.Remove(pokemon);
-        
-        return Ok(_pokemons);
+        var pokemons = _pokemonService.Delete(name);
+        return Ok(pokemons);
     }
 
     // POST: api/pokemon/{name}/train/{amount}
     [HttpPost("{name}/train/{amount}")]
     public IActionResult Train(string name, int amount)
     {
-        var pokemon = _pokemons.FirstOrDefault(p => p.Name == name);
+        var pokemon = _pokemonService.Train(name, amount);
         
         if (pokemon == null)
         {
             return NotFound($"Pokémon '{name}' not found");
         }
-        
-        pokemon.GainExperience(amount);
         
         return Ok(pokemon);
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemonMinimalControllerAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1105c5ae48405afbd6979e9e12cb19b9f1aca0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f2ae5e5a501f9ab2bcb302c68c8d20add5bcf47")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemonMinimalControllerAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemonMinimalControllerAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
